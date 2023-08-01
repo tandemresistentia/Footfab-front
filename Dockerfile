@@ -10,7 +10,7 @@ COPY package-lock.json ./
 # COPY yarn.lock ./         # Use this line if you are using yarn
 
 # Install dependencies
-RUN RUN yarn --force                    
+RUN npm ci --force                    
 # RUN yarn                  # Use this line if you are using yarn
 
 # Copy the rest of the application files to the container
