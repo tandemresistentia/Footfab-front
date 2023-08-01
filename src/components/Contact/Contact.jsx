@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './Contact.css';
 import HCaptcha from 'react-hcaptcha';
 import Nav from '../Home/Nav/Nav'
@@ -29,8 +29,7 @@ const Contact = () => {
       console.log('Please complete the hCaptcha challenge.');
       return;
     }
-  
-    // Send the form data along with the hCaptcha token to the backend for verification
+
     try {
       const response = await fetch('/submit_contact_form/', {
         method: 'POST',
@@ -39,9 +38,9 @@ const Contact = () => {
         },
         body: JSON.stringify({ ...formData, 'h-captcha-response': formData.captchaToken }),
       });
-  
+
       const responseData = await response.json();
-  
+
       if (response.ok) {
         console.log(responseData.message);
         // Reset the form after successful submission
@@ -50,10 +49,24 @@ const Contact = () => {
         console.log('Form submission failed.');
       }
     } catch (error) {
-      console.error('Error occurred during form submission:', error);
+      // Error occurred during form submission, silently catch the error
+      // without showing it to the user
+      console.log('An error occurred during form submission.');
     }
   };
-  
+
+  useEffect(() => {
+    // Cleanup function to unmount hCaptcha when the component is unmounted
+    let unmounted = false;
+
+    return () => {
+      // Check if the component is not already unmounted before attempting to unmount hCaptcha
+      if (!unmounted) {
+        console.log('Contact component is unmounting. Unmount hCaptcha here.');
+        unmounted = true;
+      }
+    };
+  }, []);
 
   return (
     <div className="contact-app2">

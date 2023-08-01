@@ -16,8 +16,6 @@ RUN npm install
 # Copy the rest of the application files to the container
 COPY . ./
 
-# Build the production version of your React app
-RUN npm run build
 
 # Set the environment variable to run the React app in production mode
 ENV NODE_ENV production
