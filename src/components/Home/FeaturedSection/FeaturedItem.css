@@ -1,0 +1,128 @@
+.featured-item {
+    width: 360px;
+    height: 435px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+
+  }
+.item-image{
+  width: 360px;
+  height: 267px;
+  flex-shrink: 0;
+  background-color: #E7E7E7;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-shoe {
+  margin-bottom: 30px;
+}
+
+.image-heart{
+  transform: translateX(130px);
+  margin-bottom: 10px;
+}
+.featured-group{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 340px;
+}
+.featured-item-text{
+ height: 130px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+
+}
+.item-title{
+  color: #081113;
+font-family: Poppins;
+font-size: 21px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-transform: capitalize;
+}
+
+.item-description {
+  color: #5B5B5B;
+/* Item-subtext */
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-transform: capitalize;
+}
+.rating-group{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 5px;
+}
+
+.item-rating-number{
+  color: #000;
+font-family: Poppins;
+font-size: 10px;
+font-style: normal;
+font-weight: 275;
+line-height: normal;
+text-transform: capitalize;
+margin-left: 4px;
+}
+.button-text{
+  display: inline-flex;
+padding: 12px 39px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+border-radius: 58px;
+border: 1px solid #000;
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
+
+color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+transform: translateY(30px);
+cursor: pointer;
+
+}
+
+
+.button-text:hover{
+  background-color: #000;
+  color: #FFF;
+  transition: 0.5s;
+}
+
+
+
+.item-price{
+margin-left: 40px;
+  color: #000;
+font-family: Poppins;
+font-size: 21px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
+transform: translateX(20px);
+transform: translateY(-30px);
+}

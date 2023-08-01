@@ -1,0 +1,383 @@
+.products-app{
+  background-color: #233136;
+}
+.products-body {
+  margin-left: 200px;
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.products-upper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  margin: 0 20px;
+  padding: 20px 0;
+  margin-top: 80px;
+}
+
+.sort-options {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  height: 130px;
+}
+
+.sort-options span {
+  margin-right: 10px;
+}
+
+.sort-options button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.sort-options button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+
+.product-grid {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  height: 880px;
+  overflow-y: scroll;
+}
+
+.product-item {
+  height: 340px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: flex-start;
+  justify-content: flex-start;
+}
+
+.product-item-inside {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+
+
+.item-title-group {
+  color: #081113;
+  font-family: Poppins;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+  height: 70px;
+}
+
+.item-description-product {
+  color: #5B5B5B;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+  transform: translateY(-20px);
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+.products-body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-upper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 20px;
+  padding: 20px 0;
+  margin-top: 80px;
+}
+
+.sort-options {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  height: 130px;
+}
+
+.sort-options span {
+  margin-right: 10px;
+}
+
+.sort-options button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.sort-options button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.products-group {
+  width: 1270px;
+  margin: 0 auto;
+  background-color: #F6F6F6;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+
+.product-item {
+  height: 340px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: flex-start;
+  justify-content: flex-start;
+}
+.product-item-image-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.product-item-inside {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.product-item-photo {
+  max-width: 100%;
+  height: 200px;
+}
+
+.item-title-group {
+  color: #081113;
+  font-family: Poppins;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+  height: 70px;
+}
+
+.item-description-product {
+  color: #5B5B5B;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+  transform: translateY(-20px);
+}
+
+.item-price-product {
+  margin-left: 40px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  transform: translateX(20px);
+  transform: translateY(-35px);
+}
+/* Assuming the heart icon is represented by the "image-heart-product" class */
+.image-heart-product {
+  /* Set the position property to relative to enable absolute positioning for the filled heart */
+  position: relative;
+  /* Set the width and height of the heart icon */
+  width: 28px;
+  height: 28px;
+  /* Set the cursor to pointer to indicate it's clickable */
+  cursor: pointer;
+}
+
+/* Style for the empty heart icon */
+.image-heart-product::before {
+  /* Use an empty heart icon as a background image */
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/Home/FeaturedSection/heart.png");
+  background-size: cover;
+}
+
+/* Style for the filled heart icon */
+.image-heart-product::after {
+  /* Use a filled heart icon as a background image */
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%; /* Set the initial height to 100% to show the full heart */
+  background-image: url("../../assets/Home/FeaturedSection/Full-heart.png");
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* Set the opacity to 0 to hide the full heart initially */
+  opacity: 0;
+  /* Set the transition property to control the animation */
+  transition: opacity 0.3s ease; /* You can adjust the animation speed here */
+}
+
+/* Apply this class to the heart icon when it is full */
+.image-heart-product.full-heart::after {
+  /* Set the opacity to 1 to make the full heart visible (fade-in effect) */
+  opacity: 1;
+}
+
+.item-rating-group{
+  display: flex;
+  flex-direction: row;
+  transform: translateY(-15px);
+}
+
+.addtobasket-button{
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.rating-group-product{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  transform: translateY(-30px);
+}
+.pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+
+@media screen and (max-width: 1150px) {
+.sort-options{
+  margin-top: 20px;
+  flex-direction: row;
+}
+  .products-app{
+    width: 100%;
+    overflow: hidden;
+  }
+  .products-body {
+    margin-left: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .products-group {
+    width:350px;
+    margin: 0 auto;
+    background-color: #F6F6F6;
+    padding: 20px;
+    border-radius: 20px;
+    height: 1000px;
+    margin-right: 0px;
+
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    height: 980px;
+    overflow-y: scroll;
+  }
+  .products-upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    margin: 0 20px;
+    padding: 20px 0;
+    margin-top: 80px;
+  }
+}

@@ -1,0 +1,30 @@
+.nav-basket{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+.basket-number{
+    width:  20px;
+    height: 20px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #FFF;
+
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-14px);
+    margin-top: 25px;
+
+}

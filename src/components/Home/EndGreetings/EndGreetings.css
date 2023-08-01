@@ -1,0 +1,67 @@
+.endgreetings-app{
+    background-image: url("../../../assets/Home/EndGreetings/HomeFinal.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 565px;
+    overflow: hidden;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.endgreetings-title{
+    color: #000;
+    font-family: 'Qwigley';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.1px;    
+}
+
+.endgreetings-greets{
+    color: #3E3E3E;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.75px;    
+}
+
+.endgreetings-info{
+    color: #484848;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+}
+
+.info-link {
+    color: #484848;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    text-decoration: none;  
+}
+
+@media screen and (max-width: 1150px) {
+
+    .endgreetings-greets{
+        width: 300px;
+        color: white;
+    }
+
+    .endgreetings-info{
+        width: 300px;
+        color: white;
+    }
+}

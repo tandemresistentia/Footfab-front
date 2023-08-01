@@ -1,0 +1,111 @@
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition-property: transform;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1.5);
+}
+.nav-app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-mobile {
+  display: none;
+}
+.show {
+  transform: translateY(0);
+}
+
+.hide {
+  transform: translateY(-100%);
+}
+
+.stay-cool-walk-in-wrapper {
+    border: 0px none;
+    height: 27px;
+    width: 238px;
+  }
+  
+.stay-cool-walk-in {
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .nav-links-wrapper {
+    border: 0px none;
+    height: 33px;
+    width: 361px;
+  }
+  
+  .nav-links {
+    align-items: center;
+    display: flex;
+    gap: 51px;
+    justify-content: center;
+    width: fit-content;
+  }
+  
+  .text-wrapper {
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-decoration: none;
+  }
+  .text-wrapper:hover {
+      color: black;
+      text-decoration:underline;
+    }
+
+  @media screen and (max-width: 1150px) {
+    .navbar{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-app{
+      display: none;
+    }
+    .nav-mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .nav-mobile-group{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .nav-mobile-links{
+      background-color: gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vh;
+      height: 150px;
+      border-radius: 40px;
+      position: relative;
+
+      
+    }
+    
+    .toggle-button{
+      background-color: transparent; /* Set the background color to transparent */
+      border: none; /* Remove the border if you want */
+      cursor: pointer;
+    }
+  }
