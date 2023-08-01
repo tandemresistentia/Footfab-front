@@ -32,7 +32,7 @@ const ShipmentCalculator = () => {
 
     try {
       // Send form data to the Django backend
-      await axios.post('http://127.0.0.1:8000/api/shipping-rates/', formData, {
+      await axios.post('https://footfab-back-production.up.railway.app/api/shipping-rates/', formData, {
         headers: {
           'Content-Type': 'application/json',
         },
@@ -59,7 +59,7 @@ const ShipmentCalculator = () => {
 
   const getShippingRates = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:8000/api/shipping-rates/');
+      const response = await axios.get('https://footfab-back-production.up.railway.app/api/shipping-rates/');
       const data = response.data;
 
       // Update the shippingRates state with the received data
