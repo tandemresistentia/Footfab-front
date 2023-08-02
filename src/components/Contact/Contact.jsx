@@ -1,10 +1,11 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Contact.css';
-import HCaptcha from 'react-hcaptcha';
-import Nav from '../Home/Nav/Nav'
-import Footer from '../Home/Footer/Footer'
+
+import Nav from '../Home/Nav/Nav';
+import Footer from '../Home/Footer/Footer';
 import WebLogo from '../../assets/Home/Nav/web-logo.png';
-import Arrow from '../../assets/Contact/Outline.png'
+import Arrow from '../../assets/Contact/Outline.png';
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -70,72 +71,66 @@ const Contact = () => {
 
   return (
     <div className="contact-app2">
-        <div className="contact-nav">
-        <Nav textColor="#ffffff" logo={WebLogo}/>
-        </div>
-    <div className="contact-app">
-        
-      <div className="contact-body">
-        <p className="contact-title">Contact Us</p>
-        <form className='form-class-group' onSubmit={handleSubmit}>
-          <div className="contact-form-group">
-            <label htmlFor="name" className="form-text">
-              Your name
-            </label>
-            <input
-              className="form-input"
-              type="text"
-              placeholder="Name"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="contact-form-group">
-            <label htmlFor="email" className="form-text">
-              Your email
-            </label>
-            <input
-              className="form-input2"
-              type="email"
-              placeholder="Email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="contact-form-group">
-            <label htmlFor="message" className="form-text">
-              Message
-            </label>
-            <textarea
-              className="form-input3"
-              id="message"
-              name="message"
-              placeholder="Message..."
-              value={formData.message}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="contact-form-lower">
-          <div className="captcha-container">
-            <HCaptcha
-              sitekey="6e282531-6a57-4e40-bc74-f207ee2dbe75" // Replace with your hCaptcha Site Key
-              onVerify={handleCaptchaChange}
-            />
-          </div>
-          <button className='button-submit' type="submit"><img src={Arrow}></img></button>
-          </div>
-        </form>
+      <div className="contact-nav">
+        <Nav textColor="#ffffff" logo={WebLogo} />
       </div>
-        
-    </div>
-    <Footer/>
+      <div className="contact-app">
+        <div className="contact-body">
+          <p className="contact-title">Contact Us</p>
+          <form className="form-class-group" onSubmit={handleSubmit}>
+            <div className="contact-form-group">
+              <label htmlFor="name" className="form-text">
+                Your name
+              </label>
+              <input
+                className="form-input"
+                type="text"
+                placeholder="Name"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="contact-form-group">
+              <label htmlFor="email" className="form-text">
+                Your email
+              </label>
+              <input
+                className="form-input2"
+                type="email"
+                placeholder="Email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="contact-form-group">
+              <label htmlFor="message" className="form-text">
+                Message
+              </label>
+              <textarea
+                className="form-input3"
+                id="message"
+                name="message"
+                placeholder="Message..."
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="contact-form-lower">
+              <button className="button-submit" type="submit">
+                <img src={Arrow} alt="Submit" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };

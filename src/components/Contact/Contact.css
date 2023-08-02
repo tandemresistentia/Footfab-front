@@ -119,6 +119,7 @@
     font-weight: 600;
     line-height: 28px;
     padding: 22px 10px;
+    width: 350px;
     text-align: center;
     transition-duration: .5s;
     transition-property: all;
