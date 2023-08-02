@@ -1,6 +1,5 @@
 # Footfab Frontend
 
-![Footfab Logo](link-to-logo)
 
 ## Description
 
