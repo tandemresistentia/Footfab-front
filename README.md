@@ -47,8 +47,8 @@ This project is licensed under the [MIT License](link-to-license). You are free 
 
 ## Contact
 
-For any inquiries or questions related to the project, you can contact the Tandem Resistentia team at [contact@footfab.com](mailto:contact@footfab.com). We would love to hear from you!
+For any inquiries or questions related to the project, you can contact the Tandem Resistentia team at luismvg41@gmail.com. We would love to hear from you!
 
 ---
 
-**Note:** Replace "link-to-logo", "link-to-license", and other placeholders with actual URLs and appropriate information related to your project.
+
