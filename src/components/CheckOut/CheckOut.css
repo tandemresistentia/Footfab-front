@@ -401,7 +401,7 @@
 @media screen and (max-width: 1150px) {
 
     .checkout-app{
-
+        overflow: hidden;
 
     }
     .checkout-upper{
