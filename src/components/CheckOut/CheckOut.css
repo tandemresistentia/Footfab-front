@@ -20,7 +20,8 @@
     line-height: normal;
     text-transform: capitalize;
     margin-right: 1150px;
-    transform: translateY(80px);
+    transform: translateY(210px);
+    margin-left: 70px;
 
 }
 .checkout-container{
@@ -29,7 +30,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 1627px;
-
+    margin-top: 70px;
 }
 .checkout-body{
     height: 100vh;
@@ -423,8 +424,7 @@
         line-height: normal;
         text-transform: capitalize;
         margin-right: 1150px;
-        transform: translateY(210px);
-        margin-left: 70px;
+
     
     }
     .checkout-container{
@@ -433,7 +433,7 @@
         align-items: center;
         justify-content: space-evenly;
         width: 100%;
-        margin-top: 70px;
+        
     }
     .checkout-body{
         height: 100vh;

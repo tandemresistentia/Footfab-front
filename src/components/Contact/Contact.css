@@ -107,7 +107,7 @@
 }
 
 .button-submit {
-    transform: translateY(-100px);
+    transform: translateY(-30px);
     display: inline-block;
     outline: 0;
     cursor: pointer;
